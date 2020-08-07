@@ -6,7 +6,7 @@ def get_indices_of_item_weights(weights, length, limit):
     loop through the array of weights
         if the difference between limit and weight is in the cache already,
             we have found our answer and we return (current index, cache[limit - weight] to target the other index)
-        cache[weight] = index
+        put weight/index key value pair in the cache
     otherwise, return None because the pair we're looking for does not exist.
     """
     # Your code here
