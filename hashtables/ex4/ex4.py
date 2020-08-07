@@ -14,7 +14,7 @@ def has_negatives(a):
     result = []
 
     for x in a:
-        if x not in cache:
+        if x not in cache and x != 0:
             cache[x] = x
             if -x in cache:
                 result.append(abs(x))
